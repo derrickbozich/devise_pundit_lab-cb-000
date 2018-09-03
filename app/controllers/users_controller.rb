@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
+    authorize @user {"Custom alert independent of the post_controller and application Pundit::NotAuthorizedError"}
   end
 
   def index
