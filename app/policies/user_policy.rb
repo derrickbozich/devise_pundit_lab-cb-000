@@ -1,5 +1,5 @@
 class UserPolicy < ApplicationPolicy
-  attr_reader :post, :record
+  attr_reader  :record
 
   def index?
     user.admin?
