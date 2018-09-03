@@ -7,7 +7,7 @@ class UserPolicy < ApplicationPolicy
 
 
   def show?
-    user.admin? || user.normal?
+    user.admin? || user.normal? || @user = user
   end
 
   def update?
