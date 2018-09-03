@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def new
     @user = current_user
-    
+
   end
 
   def create
@@ -23,8 +23,8 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
-    @user = current_user
+    # @users = User.all
+    # @user = current_user
   end
 
 
