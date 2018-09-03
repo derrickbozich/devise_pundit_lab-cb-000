@@ -13,4 +13,8 @@ class UserPolicy < ApplicationPolicy
   def update?
     user.admin?
   end
+
+  def delete?
+    user.admin?
+  end
 end
