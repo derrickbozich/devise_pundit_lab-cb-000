@@ -7,7 +7,7 @@ class UserPolicy < ApplicationPolicy
 
 
   def show?
-    user.admin? || user.moderator? || post.try(:user) == user
+    user.admin? || user.normal?
   end
 
   def update?
